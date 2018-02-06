@@ -1,0 +1,7 @@
+.banner_flat {
+  height: 40vh;
+  background-position: 50% 70%;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  margin-bottom: 40px;
+}

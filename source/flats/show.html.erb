@@ -1,0 +1,76 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+
+<!-- Banner Flash Show -->
+
+<div class="banner_flat" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+  <p><%= flat.name %></p>
+
+</div>
+
+<!-- Container  -->
+
+<div class="container">
+  <!-- Wrapper White -->
+  <div id="wrapper_white">
+    <!-- row -->
+    <div class="row" id="form">
+      <div class="col-xs-4">
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle avatar-extra-large" %>
+      </div>
+      <div class="col-xs-4" id="form">
+        <h1><%= flat.description %></h1>
+        <p><%= flat.city_name %></p>
+      </div>
+
+      <div class="col-xs-4">
+        <div class="row" >
+            <h1> Book this Flat!</h1>
+
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <input class="form-control" type="first-name"  id="your-first-name" placeholder="Check-In">
+                </div>
+              </div>
+
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <input class="form-control" type="first-name"  id="your-first-name" placeholder="Check Out">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12">
+                <label class="form-label" for="your-password"> How do you know us ?</label>
+                <select class="form-control" eid="favorite" name="language">
+                  <option value="Facebook">Facebook</option>
+                  <option value="Google">Google</option>
+                  <option value="Other">Others</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="form-control btn btn-primary">Submit</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  <!-- Wrapper Grey -->
+  <div id="wrapper_grey">
+    <h2> Salut ça va </h2>
+
+  </div>
+</div>
+
+
+
+
+

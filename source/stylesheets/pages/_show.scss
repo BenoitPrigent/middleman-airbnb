@@ -1,0 +1,46 @@
+#wrapper_white {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-grow: 0 1;
+  width: 100vw;
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  p {
+    margin-top: 1.5em;
+  }
+  a {
+    color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+
+#wrapper_grey {
+  background-color: $light-gray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  p {
+    margin-top: 1.5em;
+  }
+  a {
+    color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
